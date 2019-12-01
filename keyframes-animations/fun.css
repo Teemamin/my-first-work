@@ -1,0 +1,21 @@
+.box {
+    width: 0;
+    height: 150px;
+    margin: 25px;
+    background-color: #000;
+    animation-name: growing;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; /** for now remember you use a keyframes keyword, you give it an identifier, you refer to that identifier in your target rule, and you can also add additional supporting functions in order to carry out your animation.**/
+}
+
+@keyframes  growing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 150px;
+    }
+}
